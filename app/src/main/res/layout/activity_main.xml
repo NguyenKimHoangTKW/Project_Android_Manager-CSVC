@@ -9,29 +9,14 @@
     android:padding="16dp">
 
     <!-- TextView for title -->
-    <TextView
-        android:id="@+id/textViewTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Enter Group Name"
-        android:textSize="18sp"
-        android:paddingBottom="8dp" />
 
     <!-- EditText for input -->
-    <EditText
-        android:id="@+id/editTextGroupName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Group Name"
-        android:padding="8dp"
-        android:background="@android:drawable/edit_text"
-        android:inputType="text" />
 
     <!-- Button to send POST request -->
     <Button
-        android:id="@+id/buttonSend"
+        android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:text="Login With Google" />
 </LinearLayout>

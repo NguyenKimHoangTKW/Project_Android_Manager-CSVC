@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HỦY MƯỢN THIẾT BỊ"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTenThietBiHuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên thiết bị hủy" />
+
+        <TextView
+            android:id="@+id/tvPhonghocdangkymuonthietbihuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phòng học đăng ký mượn thiết bị hủy" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lý do hủy (Bắt buộc):" />
+
+        <EditText
+            android:id="@+id/edtLydohuymuon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnXacnhanhuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Xác nhận muốn hủy" />
+
+        <Button
+            android:id="@+id/btnThoatXacnhanhuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thoát" />
+    </LinearLayout>
+</LinearLayout>
