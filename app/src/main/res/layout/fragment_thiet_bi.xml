@@ -8,25 +8,39 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_background_blue"
+        android:paddingBottom="16dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Danh sách thiết bị"
-            android:textAlignment="center" />
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:gravity="center" />
 
         <Button
             android:id="@+id/btnThemMoiThietbi"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Thêm mới" />
+            android:text="Thêm mới"
+            android:textColor="#46aee2"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
 
         <ListView
             android:id="@+id/lvThietBiAdmin"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-    </LinearLayout>
+
 
 </LinearLayout>
