@@ -6,74 +6,106 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#46aee2"
     tools:context=".ActivityInterface.KiemDuyetActivity.DanhSachThietBiMuonAllUserActivity">
 
+    <!-- Greeting section -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="8dp">
 
         <TextView
             android:id="@+id/textView20"
-            android:layout_width="wrap_content"
+            android:layout_width="20dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Xin chào:" />
+            android:text="Xin chào:"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tvNameUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textSize="16sp"
+            android:textColor="#000000" />
     </LinearLayout>
 
+    <!-- Email section -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="8dp">
 
         <TextView
             android:id="@+id/textView23"
-            android:layout_width="wrap_content"
+            android:layout_width="20dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Email:" />
+            android:text="Email:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"  />
 
         <TextView
             android:id="@+id/tvGetEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textSize="16sp"
+            android:textColor="#000000" />
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DANH SÁCH THIẾT BỊ NGƯỜI DÙNG ĐĂNG KÝ MƯỢN"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:textStyle="bold"
+
+        android:gravity="center" />
+
+    <!-- Logout button -->
+    <Button
+        android:id="@+id/btnLogoutt"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:text="Đăng xuất"
+        android:layout_gravity="center"
+        android:backgroundTint="#d32f2f"
+        android:padding="10dp"
+        android:textColor="#ffffff" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/rounded_background"
         android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/textView17"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="DANH SÁCH THIẾT BỊ NGƯỜI DÙNG ĐĂNG KÝ MƯỢN"
-            android:textAlignment="center" />
+        <!-- Filter section for device status -->
         <Spinner
             android:id="@+id/spinnerTrangThaiFilter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:spinnerMode="dropdown" />
-        <Button
-            android:id="@+id/btnLogoutt"
-            android:layout_width="156dp"
-            android:layout_height="wrap_content"
-            android:text="Đăng xuất" />
-
+        <!-- ListView for devices -->
         <ListView
             android:id="@+id/lvFullThietBiMuon"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="0dp"
+            android:layout_weight="1"
+        android:paddingTop="8dp" />
     </LinearLayout>
+
 </LinearLayout>

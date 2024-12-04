@@ -3,14 +3,31 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="20dp">
 
     <!-- TextView and EditText for room name -->
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Tên phòng học:"
-        android:textSize="16sp" />
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:background="@drawable/rounded_background_blue"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:gravity="center" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên phòng học:"
+        android:background="@color/white"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="center" />
 
     <EditText
         android:id="@+id/edtTenPhongHoc"
@@ -18,7 +35,9 @@
         android:layout_height="wrap_content"
         android:hint="Nhập tên phòng học"
         android:padding="8dp"
-        android:background="@android:drawable/edit_text" />
+        android:background="@android:drawable/edit_text"
+        android:textColor="#000000"
+        android:textSize="14sp" />
 
     <!-- Button Layout -->
     <LinearLayout
@@ -27,28 +46,37 @@
         android:orientation="horizontal"
         android:gravity="center"
         android:paddingTop="16dp"
-        android:weightSum="4">
+        android:weightSum="3">
 
         <Button
             android:id="@+id/btnSuaPhongHoc"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Sửa" />
+            android:text="Sửa"
+            android:textStyle="bold"
+            android:backgroundTint="#46aee2"
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/btnXoaPhongHoc"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Xóa" />
+            android:text="Xóa"
+            android:textStyle="bold"
+            android:backgroundTint="#f44336"
+            android:textColor="#ffffff" />
 
         <Button
             android:id="@+id/btnTroVe"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Trở về" />
+            android:text="Trở về"
+            android:textStyle="bold"
+            android:backgroundTint="#9e9e9e"
+            android:textColor="#ffffff" />
     </LinearLayout>
 
 </LinearLayout>

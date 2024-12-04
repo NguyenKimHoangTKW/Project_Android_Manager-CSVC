@@ -16,11 +16,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="DANH SÁCH TÀI KHOẢN"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_background_blue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:gravity="center" />
 
         <ListView
             android:id="@+id/lvShowAccount"
             android:layout_width="match_parent"
+            android:paddingTop="20dp"
             android:layout_height="match_parent" />
     </LinearLayout>
 </LinearLayout>

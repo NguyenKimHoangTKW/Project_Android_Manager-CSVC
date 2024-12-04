@@ -1,39 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
+    <!-- Phần thông tin thiết bị -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingBottom="16dp">
 
+        <!-- Cột 1: Tên thiết bị -->
         <LinearLayout
-            android:layout_width="299dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingEnd="8dp">
 
             <TextView
                 android:id="@+id/textView7"
                 android:layout_width="match_parent"
-                android:layout_height="52dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:text="Tên thiết bị"
-                android:textAlignment="center" />
+                android:textStyle="bold"
+                android:textSize="16sp"
+
+                android:paddingBottom="8dp"/>
 
             <TextView
                 android:id="@+id/tvrowtenthietbif"
-                android:layout_width="161dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="Tên thiết bị"
-                android:textAlignment="center" />
+                android:textStyle="bold"
+                android:textSize="16sp"
+                />
         </LinearLayout>
 
+        <!-- Cột 2: Thông tin khác -->
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
@@ -42,40 +50,57 @@
                 android:id="@+id/tvrowthongso"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Thông số" />
+                android:text="Thông số"
+                android:textSize="16sp"
+                
+                android:paddingBottom="8dp"/>
 
             <TextView
                 android:id="@+id/tvrowthuonghieu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Thương hiệu" />
+                android:text="Thương hiệu"
+                android:textSize="16sp"
+                
+                android:paddingBottom="8dp"/>
 
             <TextView
                 android:id="@+id/tvrowsoluong"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Số lượng" />
+                android:text="Số lượng"
+                android:textSize="16sp"
+                
+                android:paddingBottom="8dp"/>
 
             <TextView
                 android:id="@+id/tvrowphanloai"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Phân loại" />
+                android:text="Phân loại"
+                android:textSize="16sp"
+                
+                android:paddingBottom="8dp"/>
 
             <TextView
                 android:id="@+id/tvrowDonvitinh"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Đơn vị tính" />
+                android:text="Đơn vị tính"
+                android:textSize="16sp"
+                
+                android:paddingBottom="8dp"/>
 
             <TextView
                 android:id="@+id/tvrowtrangthai"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Trạng thái"
-                android:textAlignment="textEnd" />
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"
+                android:paddingBottom="8dp"/>
         </LinearLayout>
-
     </LinearLayout>
 
 </LinearLayout>

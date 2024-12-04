@@ -47,8 +47,8 @@ public class PhongHocActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        tvname = findViewById(R.id.tvname);
-        tvemail = findViewById(R.id.tvemail);
+        tvname = findViewById(R.id.tvNameAns);
+        tvemail = findViewById(R.id.tvEmailAns);
         btnSignOut = findViewById(R.id.btnLogout);
 
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();

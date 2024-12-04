@@ -1,41 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#46aee2"
     tools:context=".ActivityInterface.PhongHocActivity">
 
+    <!-- Phần trên: Tiêu đề -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="16dp"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Thông tin" />
-
-        <TextView
-            android:id="@+id/tvname"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="name" />
-
-        <TextView
-            android:id="@+id/tvemail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="email" />
-
-        <Button
-            android:id="@+id/btnLogout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Logout" />
+            android:text="Thông tin người dùng"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center" />
     </LinearLayout>
 
+    <!-- Phần dưới: Thông tin người dùng -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@drawable/rounded_background"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Tên:"
+                android:textColor="#46aee2"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <!-- Thông tin: email -->
+            <TextView
+                android:id="@+id/tvNameAns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nguyễn Kim Hoàng"
+                android:textColor="#333333"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textColor="#46aee2"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <!-- Thông tin: email -->
+            <TextView
+                android:id="@+id/tvEmailAns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nguyenvana@gmail.com"
+                android:textColor="#333333"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Nút Logout -->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#46aee2"
+        android:padding="12dp"
+        android:text="Đăng xuất"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
 </LinearLayout>

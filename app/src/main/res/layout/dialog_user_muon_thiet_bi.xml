@@ -1,89 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/rounded_background_blue">
 
+    <!-- Tên thiết bị -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="163dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Tên thiết bị: " />
-
-            <TextView
-                android:id="@+id/edtTenPhongHocU"
-                android:layout_width="204dp"
-                android:layout_height="match_parent"
-                android:text="TextView" />
-        </LinearLayout>
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
 
         <TextView
-            android:id="@+id/textView9"
-            android:layout_width="match_parent"
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Danh sách phòng học sử dụng: " />
-
-        <Spinner
-            android:id="@+id/spinPhongHoc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_weight="1"
+            android:text="Tên thiết bị:"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
 
         <TextView
-            android:id="@+id/textView10"
-            android:layout_width="match_parent"
+            android:id="@+id/edtTenPhongHocU"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Số lượng mượn:" />
-
-        <EditText
-            android:id="@+id/edtSoluongmuon"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="number" />
-
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Yêu cầu (nếu có):" />
-
-        <EditText
-            android:id="@+id/edtYeuCau"
-            android:layout_width="match_parent"
-            android:layout_height="113dp"
-            android:ems="10"
-            android:inputType="text" />
-
+            android:layout_weight="2"
+            android:text="TextView"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
     </LinearLayout>
 
+    <!-- Danh sách phòng học sử dụng -->
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh sách phòng học sử dụng:"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:paddingBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/spinPhongHoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Số lượng mượn -->
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số lượng mượn:"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:paddingBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/edtSoluongmuon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:background="@android:drawable/edit_text"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Yêu cầu -->
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yêu cầu (nếu có):"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:paddingBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/edtYeuCau"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:ems="10"
+        android:inputType="text"
+        android:background="@android:drawable/edit_text"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Nút đăng ký và hủy -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2"
+        android:paddingTop="16dp">
 
         <Button
             android:id="@+id/btnDangkymuon"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Đăng ký mượn" />
+            android:text="Đăng ký mượn"
+            android:textStyle="bold"
+            android:backgroundTint="@color/white"
+            android:textColor="#46aee2"/>
 
         <Button
             android:id="@+id/btnHuydangkymuon"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Hủy" />
+            android:text="Hủy"
+            android:textStyle="bold"
+            android:backgroundTint="#9e9e9e"
+            android:textColor="#ffffff"/>
     </LinearLayout>
 </LinearLayout>

@@ -1,73 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!-- Device Info Section -->
         <TextView
             android:id="@+id/tvShowtenthietbimuon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tên thiết bị mượn" />
+            android:text="Tên thiết bị mượn"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
 
         <TextView
             android:id="@+id/tvShowtenphonghocmuon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tên phòng học mượn" />
+            android:text="Tên phòng học mượn"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
 
         <TextView
             android:id="@+id/tvSoluongmuon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Số lượng mượn" />
+            android:text="Số lượng mượn"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
 
+        <!-- Request Details Section -->
         <TextView
             android:id="@+id/tvYeuCauMuon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Yêu cầu mượn" />
+            android:text="Yêu cầu mượn"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
 
         <TextView
             android:id="@+id/tvLydohuymuonuser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lý do hủy" />
+            android:text="Lý do hủy"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
 
+        <!-- Dates Section -->
         <TextView
             android:id="@+id/tvngaydangkymuon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ngày đăng ký mượn" />
+            android:text="Ngày đăng ký mượn"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
 
         <TextView
             android:id="@+id/tvNgaymuonuser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ngày mượn" />
+            android:text="Ngày mượn"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
 
         <TextView
             android:id="@+id/tvNgayhuyuser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ngày hủy" />
+            android:text="Ngày hủy"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
 
         <TextView
             android:id="@+id/tvNgaytrauser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ngày trả" />
+            android:text="Ngày trả"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
 
+        <!-- Status Section -->
         <TextView
             android:id="@+id/tvTrangthaimuon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Trạng thái mượn"
-            android:textAlignment="textEnd" />
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAlignment="textEnd"
+            android:paddingTop="8dp" />
     </LinearLayout>
-</LinearLayout>
+</ScrollView>

@@ -1,65 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
+    <!-- Header TextView -->
     <TextView
         android:id="@+id/textView12"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="HỦY MƯỢN THIẾT BỊ"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:background="@drawable/rounded_background_blue"
+        android:gravity="center" />
 
+    <!-- Details Layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingTop="16dp">
 
         <TextView
             android:id="@+id/tvTenThietBiHuy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tên thiết bị hủy" />
+            android:text="Tên thiết bị hủy"
+            android:textSize="16sp"
+            android:paddingBottom="8dp"/>
 
         <TextView
             android:id="@+id/tvPhonghocdangkymuonthietbihuy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Phòng học đăng ký mượn thiết bị hủy" />
+            android:text="Phòng học đăng ký mượn thiết bị hủy"
+            android:textSize="16sp"
+            android:paddingBottom="8dp"/>
 
         <TextView
             android:id="@+id/textView14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lý do hủy (Bắt buộc):" />
+            android:text="Lý do hủy (Bắt buộc):"
+            android:textSize="16sp"
+            android:paddingBottom="8dp"/>
 
         <EditText
             android:id="@+id/edtLydohuymuon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" />
-
+            android:inputType="text"
+            android:background="@android:drawable/edit_text"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:padding="8dp"/>
     </LinearLayout>
 
+    <!-- Button Layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:weightSum="2">
 
         <Button
             android:id="@+id/btnXacnhanhuy"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Xác nhận muốn hủy" />
+            android:text="Xác nhận muốn hủy"
+            android:textStyle="bold"
+            android:backgroundTint="#46aee2"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/btnThoatXacnhanhuy"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Thoát" />
+            android:text="Thoát"
+            android:textStyle="bold"
+            android:backgroundTint="#9e9e9e"
+            android:textColor="#ffffff"/>
     </LinearLayout>
 </LinearLayout>
