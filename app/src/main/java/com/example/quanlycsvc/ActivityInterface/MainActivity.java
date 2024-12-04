@@ -46,7 +46,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
         googleBtn = findViewById(R.id.btnLogin);
-        gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
+        gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestEmail()
+                .build();
         gsc = GoogleSignIn.getClient(this,gso);
 
         googleBtn.setOnClickListener(new View.OnClickListener() {

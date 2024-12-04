@@ -60,7 +60,7 @@ public class MainAdminActivity extends AppCompatActivity {
         NavigationView navigationView = binding.navView;
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_account,R.id.nav_phonghoc)
+                R.id.nav_home, R.id.nav_account,R.id.nav_thietbi,R.id.nav_phonghoc)
                 .setOpenableLayout(drawer)
                 .build();
 

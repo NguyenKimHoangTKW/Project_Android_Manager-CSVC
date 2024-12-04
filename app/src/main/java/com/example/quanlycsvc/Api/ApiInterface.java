@@ -3,6 +3,7 @@ package com.example.quanlycsvc.Api;
 import com.example.quanlycsvc.Models.Account;
 import com.example.quanlycsvc.Models.DanhSachThietBiDaMuonUser;
 import com.example.quanlycsvc.Models.DanhSachThietBiUser;
+import com.example.quanlycsvc.Models.DonViTinh;
 import com.example.quanlycsvc.Models.DroplistRole;
 import com.example.quanlycsvc.Models.DroplistTrangThai;
 import com.example.quanlycsvc.Models.DuyetMuonChoNguoiDung;
@@ -10,9 +11,12 @@ import com.example.quanlycsvc.Models.GetFullThietBiMuon;
 import com.example.quanlycsvc.Models.GetInfoCBVC;
 import com.example.quanlycsvc.Models.GoogleLoginRequest;
 import com.example.quanlycsvc.Models.HuyMuonUser;
+import com.example.quanlycsvc.Models.PhanLoai;
 import com.example.quanlycsvc.Models.PhongHoc;
 import com.example.quanlycsvc.Models.ThanhVien;
+import com.example.quanlycsvc.Models.ThuongHieu;
 import com.example.quanlycsvc.Models.UpdateAccount;
+import com.example.quanlycsvc.Models.UpdateThietBi;
 import com.example.quanlycsvc.Models.UserMuonThietBi;
 
 import java.util.List;
@@ -45,6 +49,15 @@ public interface ApiInterface {
 
     @GET("api/droplist_role")
     Call<List<DroplistRole>> droplistRole();
+
+    @GET("api/get_full_thuong_hieu")
+    Call<List<ThuongHieu>> droplistThuongHieu();
+
+    @GET("api/droplist-don-vi-tinh")
+    Call<List<DonViTinh>> droplistDonViTinh();
+
+    @GET("api/droplist-phan-loai")
+    Call<List<PhanLoai>> droplistPhanLoai();
     //POST
     @POST("api/get_cbvc_by_email")
     Call<GetInfoCBVC> getinfocbvc(@Body GetInfoCBVC getInfoCBVC);
@@ -71,6 +84,12 @@ public interface ApiInterface {
 
     @POST("api/update-account")
     Call<UpdateAccount> update_account(@Body UpdateAccount updateAccount);
+
+    @POST("api/update-thiet-bi")
+    Call<UpdateThietBi> them_moi_thiet_bi (@Body UpdateThietBi updateThietBi);
+
+    @POST("api/sua-thiet-bi")
+    Call<UpdateThietBi> update_thiet_bi (@Body UpdateThietBi updateThietBi);
     //PUT
     @PUT("api/update_phong_hoc")
     Call<PhongHoc> update_phong_hoc (@Body PhongHoc updatephonghoc);

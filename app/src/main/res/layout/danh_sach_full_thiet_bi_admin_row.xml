@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Phần thông tin thiết bị -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp">
+
+        <!-- Cột 1: Tên thiết bị -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingEnd="8dp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên thiết bị"
+                android:textStyle="bold"
+                android:textSize="16sp"
+
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvrowtenthietbia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên thiết bị"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <!-- Cột 2: Thông tin khác -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvrowthongsoa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thông số"
+                android:textSize="16sp"
+
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvrowthuonghieua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thương hiệu"
+                android:textSize="16sp"
+
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvrowsoluonga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số lượng"
+                android:textSize="16sp"
+
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvrowphanloaia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phân loại"
+                android:textSize="16sp"
+
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvrowDonvitinha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đơn vị tính"
+                android:textSize="16sp"
+
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvrowtrangthaia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trạng thái"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"
+                android:paddingBottom="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

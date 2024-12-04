@@ -9,6 +9,10 @@
             android:icon="?attr/actionModePasteDrawable"
             android:title="@string/menu_home" />
         <item
+            android:id="@+id/nav_thietbi"
+            android:icon="@drawable/baseline_meeting_room_24"
+            android:title="@string/menu_thietbi" />
+        <item
             android:id="@+id/nav_phonghoc"
             android:icon="@drawable/baseline_meeting_room_24"
             android:title="@string/menu_phonghoc" />

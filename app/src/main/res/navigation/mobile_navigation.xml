@@ -6,6 +6,11 @@
     app:startDestination="@+id/nav_home">
 
     <fragment
+        android:id="@+id/nav_thietbi"
+        android:name="com.example.quanlycsvc.ActivityInterface.ui.thietbi.ThietBiFragment"
+        android:label="Thiết bị"
+        tools:layout="@layout/fragment_thiet_bi" />
+    <fragment
         android:id="@+id/nav_account"
         android:name="com.example.quanlycsvc.ActivityInterface.ui.account.AccountFragment"
         android:label="@string/menu_account"
