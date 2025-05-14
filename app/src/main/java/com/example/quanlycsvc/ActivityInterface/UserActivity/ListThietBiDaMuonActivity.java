@@ -60,7 +60,7 @@ public class ListThietBiDaMuonActivity extends AppCompatActivity {
     }
 
     public void Set_Control() {
-        listview = findViewById(R.id.lvDanhSachThietBiDaMuon);
+        listview = findViewById(R.id.lvDanhSachThietBiDaMuons);
         list = new ArrayList<>();
         adapter = new DanhSachDaMuonAdapter(ListThietBiDaMuonActivity.this, list);
         listview.setAdapter(adapter);
@@ -77,8 +77,9 @@ public class ListThietBiDaMuonActivity extends AppCompatActivity {
         });
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                DanhSachThietBiDaMuonUser danhSachThietBiDaMuonUser = list.get(position);
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                DanhSachThietBiDaMuonUser danhSachThietBiDaMuonUser = list.get(i);
+                Log.e("EEEE","SADSAD");
                 if ("Đã hủy".equals(danhSachThietBiDaMuonUser.ten_trang_thaii)) {
                     Toast.makeText(ListThietBiDaMuonActivity.this, "Bạn đã hủy mượn thiết bị này", Toast.LENGTH_SHORT).show();
                 }
@@ -90,6 +91,7 @@ public class ListThietBiDaMuonActivity extends AppCompatActivity {
                 }
             }
         });
+
 
     }
 

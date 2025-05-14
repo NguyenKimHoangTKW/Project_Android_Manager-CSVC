@@ -14,45 +14,50 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="@drawable/rounded_background_blue"
-        android:padding="8dp">
+        android:padding="16dp"
+        android:gravity="center">
 
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Danh sách thiết bị đã mượn"
-            android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="20sp"
             android:textAllCaps="true"
-            android:textStyle="bold"
-            android:gravity="center"/>
-
+            android:textStyle="bold" />
     </LinearLayout>
 
-        <Button
-            android:id="@+id/btnBacktodanhsachmuon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Quay lại"
-            android:layout_gravity="center"
-            android:backgroundTint="#d32f2f"
-            android:textColor="#ffffff"/>
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/btnBacktodanhsachmuon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quay lại"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#d32f2f"
+        android:textColor="#ffffff"
+        android:layout_marginVertical="8dp" />
 
     <!-- List View Section -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:paddingTop="8dp">
+        android:padding="8dp">
 
         <ListView
-            android:id="@+id/lvDanhSachThietBiDaMuon"
+            android:id="@+id/lvDanhSachThietBiDaMuons"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="match_parent"
             android:divider="@android:color/darker_gray"
-            android:dividerHeight="0.5dp" />
+            android:dividerHeight="1dp"
+            android:padding="4dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
 
+            android:clipToPadding="false"
+            android:scrollbars="vertical" />
     </LinearLayout>
 </LinearLayout>

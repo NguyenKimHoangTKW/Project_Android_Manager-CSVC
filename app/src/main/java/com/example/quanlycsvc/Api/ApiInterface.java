@@ -32,67 +32,65 @@ import retrofit2.http.Path;
 
 public interface ApiInterface {
     //GET
-    @GET("api/get_full_phong_hoc")
+    @GET("get_full_phong_hoc")
     Call <List<PhongHoc>> getfullphonghoc();
 
-    @GET("api/get_full_thiet_bi")
+    @GET("get_full_thiet_bi")
     Call<List<DanhSachThietBiUser>> getfullthietbi();
 
-    @GET("api/get-full-thiet-bi-muon")
+    @GET("get-full-thiet-bi-muon")
     Call<List<GetFullThietBiMuon>> getfullthietbimuon();
 
-    @GET("api/droplist_trang_thai_duyet_muon")
+    @GET("droplist_trang_thai_duyet_muon")
     Call<List<DroplistTrangThai>> droplisttrangthai();
 
-    @GET("api/get_full_account")
+    @GET("get_full_account")
     Call<List<Account>> get_full_account();
 
-    @GET("api/droplist_role")
+    @GET("droplist_role")
     Call<List<DroplistRole>> droplistRole();
 
-    @GET("api/get_full_thuong_hieu")
+    @GET("get_full_thuong_hieu")
     Call<List<ThuongHieu>> droplistThuongHieu();
 
-    @GET("api/droplist-don-vi-tinh")
+    @GET("droplist-don-vi-tinh")
     Call<List<DonViTinh>> droplistDonViTinh();
 
-    @GET("api/droplist-phan-loai")
+    @GET("droplist-phan-loai")
     Call<List<PhanLoai>> droplistPhanLoai();
     //POST
-    @POST("api/get_cbvc_by_email")
+    @POST("get_cbvc_by_email")
     Call<GetInfoCBVC> getinfocbvc(@Body GetInfoCBVC getInfoCBVC);
-    @POST("api/create_phong_hoc")
+    @POST("create_phong_hoc")
     Call<PhongHoc> create_phong_hoc(@Body PhongHoc createphonghoc);
-    @POST("api/login-with-google")
+    @POST("login-with-google")
     Call<GoogleLoginRequest> loginwithgoogle(@Body GoogleLoginRequest loginRequest);
-    @POST("api/delete_phong_hoc")
+    @POST("delete_phong_hoc")
     Call<PhongHoc> delete_phong_hoc (@Body PhongHoc deletephonghoc);
-    @POST("api/user_muon_thiet_bi")
+    @POST("user_muon_thiet_bi")
     Call<UserMuonThietBi> user_muon_thiet_bi(@Body UserMuonThietBi userMuonThietBi);
 
-    @POST("api/get-full-thiet-bi-muon-by-cbvc")
+    @POST("get-full-thiet-bi-muon-by-cbvc")
     Call<GetInfoCBVC> getthietbibycbvc(@Body GetInfoCBVC getInfoCBVC);
 
-    @POST("api/get-full-thiet-bi-muon-by-cbvc")
+    @POST("get-full-thiet-bi-muon-by-cbvc")
     Call<List<DanhSachThietBiDaMuonUser>> get_full_thiet_bi_user_muon(@Body GetInfoCBVC getInfoCBVC);
 
-    @POST("api/user-huy-muon-thiet-bi")
+    @POST("user-huy-muon-thiet-bi")
     Call<HuyMuonUser> huymuonuser(@Body HuyMuonUser huyMuonUser);
 
-    @POST("api/duyet-muon-user")
+    @POST("duyet-muon-user")
     Call<DuyetMuonChoNguoiDung> duyetmuonchonguoidung(@Body DuyetMuonChoNguoiDung duyetMuonChoNguoiDung);
 
-    @POST("api/update-account")
+    @POST("update-account")
     Call<UpdateAccount> update_account(@Body UpdateAccount updateAccount);
 
-    @POST("api/update-thiet-bi")
+    @POST("update-thiet-bi")
     Call<UpdateThietBi> them_moi_thiet_bi (@Body UpdateThietBi updateThietBi);
 
-    @POST("api/sua-thiet-bi")
+    @POST("sua-thiet-bi")
     Call<UpdateThietBi> update_thiet_bi (@Body UpdateThietBi updateThietBi);
     //PUT
-    @PUT("api/update_phong_hoc")
+    @PUT("update_phong_hoc")
     Call<PhongHoc> update_phong_hoc (@Body PhongHoc updatephonghoc);
-
-
 }

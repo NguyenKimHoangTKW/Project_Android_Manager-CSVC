@@ -4,7 +4,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitInstance {
-    public static String api = "https://kimhoangapi-c7fmddeagvegefas.eastasia-01.azurewebsites.net/";
+    public static String api = "https://kimhoang.site/api/v1/";
     public static RetrofitInstance retrofitInstance;
     public ApiInterface apiInterface;
     RetrofitInstance(){
